@@ -27,6 +27,16 @@ void printBooks2(struct Books *book)
 
 }
 
+/*位域*/
+struct Status
+{
+    unsigned int widthVaild : 1;
+};
+
+/*typedef关键字，为类型取一个新的名字*/
+typedef unsigned char CHAR;
+CHAR char1, char2;
+
 int main() {
     printf("title : %s\nauthor: %s\nsubject: %s\nbook_id: %d\n", book.title, book.author, book.subject, book.book_id);
 
